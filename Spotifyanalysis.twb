@@ -1,0 +1,1934 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Spotifyanalysis_17109406354090' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='color' value='#72b966' />
+    </style-rule>
+    <style-rule element='all'>
+      <format attr='color' value='#000000' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Popular_Spotify_Songs' inline='true' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Popular_Spotify_Songs' name='textscan.0wsb8100e0abai180kpl3169apum'>
+            <connection class='textscan' directory='C:/Users/Sarveshvaran/Pictures' filename='Popular_Spotify_Songs.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wsb8100e0abai180kpl3169apum' name='Popular_Spotify_Songs.csv' table='[Popular_Spotify_Songs#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='track_name' ordinal='0' />
+            <column datatype='string' name='artist(s)_name' ordinal='1' />
+            <column datatype='integer' name='artist_count' ordinal='2' />
+            <column datatype='integer' name='released_year' ordinal='3' />
+            <column datatype='integer' name='released_month' ordinal='4' />
+            <column datatype='integer' name='released_day' ordinal='5' />
+            <column datatype='integer' name='in_spotify_playlists' ordinal='6' />
+            <column datatype='integer' name='in_spotify_charts' ordinal='7' />
+            <column datatype='integer' name='streams' ordinal='8' />
+            <column datatype='integer' name='in_apple_playlists' ordinal='9' />
+            <column datatype='integer' name='in_apple_charts' ordinal='10' />
+            <column datatype='integer' name='in_deezer_playlists' ordinal='11' />
+            <column datatype='integer' name='in_deezer_charts' ordinal='12' />
+            <column datatype='integer' name='in_shazam_charts' ordinal='13' />
+            <column datatype='integer' name='bpm' ordinal='14' />
+            <column datatype='string' name='key' ordinal='15' />
+            <column datatype='string' name='mode' ordinal='16' />
+            <column datatype='integer' name='danceability_%' ordinal='17' />
+            <column datatype='integer' name='valence_%' ordinal='18' />
+            <column datatype='integer' name='energy_%' ordinal='19' />
+            <column datatype='integer' name='acousticness_%' ordinal='20' />
+            <column datatype='integer' name='instrumentalness_%' ordinal='21' />
+            <column datatype='integer' name='liveness_%' ordinal='22' />
+            <column datatype='integer' name='speechiness_%' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wsb8100e0abai180kpl3169apum' name='Popular_Spotify_Songs.csv' table='[Popular_Spotify_Songs#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='track_name' ordinal='0' />
+            <column datatype='string' name='artist(s)_name' ordinal='1' />
+            <column datatype='integer' name='artist_count' ordinal='2' />
+            <column datatype='integer' name='released_year' ordinal='3' />
+            <column datatype='integer' name='released_month' ordinal='4' />
+            <column datatype='integer' name='released_day' ordinal='5' />
+            <column datatype='integer' name='in_spotify_playlists' ordinal='6' />
+            <column datatype='integer' name='in_spotify_charts' ordinal='7' />
+            <column datatype='integer' name='streams' ordinal='8' />
+            <column datatype='integer' name='in_apple_playlists' ordinal='9' />
+            <column datatype='integer' name='in_apple_charts' ordinal='10' />
+            <column datatype='integer' name='in_deezer_playlists' ordinal='11' />
+            <column datatype='integer' name='in_deezer_charts' ordinal='12' />
+            <column datatype='integer' name='in_shazam_charts' ordinal='13' />
+            <column datatype='integer' name='bpm' ordinal='14' />
+            <column datatype='string' name='key' ordinal='15' />
+            <column datatype='string' name='mode' ordinal='16' />
+            <column datatype='integer' name='danceability_%' ordinal='17' />
+            <column datatype='integer' name='valence_%' ordinal='18' />
+            <column datatype='integer' name='energy_%' ordinal='19' />
+            <column datatype='integer' name='acousticness_%' ordinal='20' />
+            <column datatype='integer' name='instrumentalness_%' ordinal='21' />
+            <column datatype='integer' name='liveness_%' ordinal='22' />
+            <column datatype='integer' name='speechiness_%' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-refresh-mode='' incremental-updates='' required-client-version='' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>track_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[track_name]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>track_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist(s)_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist(s)_name]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>artist(s)_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[artist_count]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>artist_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>released_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[released_year]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>released_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>released_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[released_month]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>released_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>released_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[released_day]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>released_day</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_spotify_playlists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_spotify_playlists]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_spotify_playlists</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_spotify_charts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_spotify_charts]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_spotify_charts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>streams</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[streams]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>streams</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_apple_playlists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_apple_playlists]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_apple_playlists</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_apple_charts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_apple_charts]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_apple_charts</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_deezer_playlists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_deezer_playlists]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_deezer_playlists</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_deezer_charts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_deezer_charts]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_deezer_charts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_shazam_charts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_shazam_charts]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>in_shazam_charts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bpm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bpm]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>bpm</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[key]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>key</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mode]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>mode</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>danceability_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[danceability_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>danceability_%</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>valence_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[valence_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>valence_%</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energy_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[energy_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>energy_%</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acousticness_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[acousticness_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>acousticness_%</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instrumentalness_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instrumentalness_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>instrumentalness_%</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>liveness_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[liveness_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>liveness_%</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speechiness_%</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[speechiness_%]</local-name>
+            <parent-name>[Popular_Spotify_Songs.csv]</parent-name>
+            <remote-alias>speechiness_%</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Popular_Spotify_Songs.csv' datatype='table' name='[__tableau_internal_object_id__].[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]' role='measure' type='quantitative' />
+      <column caption='Acousticness %' datatype='integer' name='[acousticness_%]' role='measure' type='quantitative' />
+      <column caption='Artist(S) Name' datatype='string' name='[artist(s)_name]' role='dimension' type='nominal' />
+      <column caption='Artist Count' datatype='integer' name='[artist_count]' role='measure' type='quantitative' />
+      <column caption='Bpm' datatype='integer' name='[bpm]' role='measure' type='quantitative' />
+      <column caption='Danceability %' datatype='integer' name='[danceability_%]' role='measure' type='quantitative' />
+      <column caption='Energy %' datatype='integer' name='[energy_%]' role='measure' type='quantitative' />
+      <column caption='In Apple Charts' datatype='integer' name='[in_apple_charts]' role='measure' type='quantitative' />
+      <column caption='In Apple Playlists' datatype='integer' name='[in_apple_playlists]' role='measure' type='quantitative' />
+      <column caption='In Deezer Charts' datatype='integer' name='[in_deezer_charts]' role='measure' type='quantitative' />
+      <column caption='In Deezer Playlists' datatype='integer' name='[in_deezer_playlists]' role='measure' type='quantitative' />
+      <column caption='In Shazam Charts' datatype='integer' name='[in_shazam_charts]' role='measure' type='quantitative' />
+      <column caption='In Spotify Charts' datatype='integer' name='[in_spotify_charts]' role='measure' type='quantitative' />
+      <column caption='In Spotify Playlists' datatype='integer' name='[in_spotify_playlists]' role='measure' type='quantitative' />
+      <column caption='Instrumentalness %' datatype='integer' name='[instrumentalness_%]' role='measure' type='quantitative' />
+      <column caption='Key' datatype='string' name='[key]' role='dimension' type='nominal' />
+      <column caption='Liveness %' datatype='integer' name='[liveness_%]' role='measure' type='quantitative' />
+      <column caption='Mode' datatype='string' name='[mode]' role='dimension' type='nominal' />
+      <column caption='Released Day' datatype='integer' name='[released_day]' role='dimension' type='quantitative' />
+      <column caption='Released Month' datatype='integer' name='[released_month]' role='dimension' type='quantitative' />
+      <column caption='Released Year' datatype='integer' name='[released_year]' role='dimension' type='quantitative' />
+      <column caption='Speechiness %' datatype='integer' name='[speechiness_%]' role='measure' type='quantitative' />
+      <column caption='Streams' datatype='integer' name='[streams]' role='measure' type='quantitative' />
+      <column caption='Track Name' datatype='string' name='[track_name]' role='dimension' type='nominal' />
+      <column caption='Valence %' datatype='integer' name='[valence_%]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Sarveshvaran/Documents/My Tableau Repository/Datasources/Popular_Spotify_Songs.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/20/2024 01:10:55 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-refresh-mode='' incremental-updates='' required-client-version=''>
+            <refresh-event add-from-file-path='Popular_Spotify_Songs' increment-value='%null%' refresh-type='create' rows-inserted='953' timestamp-start='2024-03-20 13:10:54.870' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>track_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[track_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>track_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>943</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>artist(s)_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[artist(s)_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>artist(s)_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>645</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>artist_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[artist_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>artist_count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>released_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[released_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>released_year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>released_month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[released_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>released_month</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>released_day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[released_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>released_day</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_spotify_playlists</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_spotify_playlists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_spotify_playlists</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>879</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_spotify_charts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_spotify_charts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_spotify_charts</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>streams</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[streams]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>streams</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>949</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_apple_playlists</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_apple_playlists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_apple_playlists</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>234</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_apple_charts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_apple_charts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_apple_charts</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>172</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_deezer_playlists</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_deezer_playlists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_deezer_playlists</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>348</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_deezer_charts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_deezer_charts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_deezer_charts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_shazam_charts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_shazam_charts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_shazam_charts</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>199</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bpm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bpm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bpm</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>key</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>key</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mode</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>danceability_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[danceability_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>danceability_%</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>valence_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[valence_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>valence_%</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>energy_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[energy_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>energy_%</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>acousticness_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[acousticness_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>acousticness_%</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>instrumentalness_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[instrumentalness_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>instrumentalness_%</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>liveness_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[liveness_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>liveness_%</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speechiness_%</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[speechiness_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speechiness_%</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Popular_Spotify_Songs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Popular_Spotify_Songs.csv' id='Popular_Spotify_Songs.csv_491F72FA914B42F28A9554D6FF86D367'>
+            <properties context=''>
+              <relation connection='textscan.0wsb8100e0abai180kpl3169apum' name='Popular_Spotify_Songs.csv' table='[Popular_Spotify_Songs#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='track_name' ordinal='0' />
+                  <column datatype='string' name='artist(s)_name' ordinal='1' />
+                  <column datatype='integer' name='artist_count' ordinal='2' />
+                  <column datatype='integer' name='released_year' ordinal='3' />
+                  <column datatype='integer' name='released_month' ordinal='4' />
+                  <column datatype='integer' name='released_day' ordinal='5' />
+                  <column datatype='integer' name='in_spotify_playlists' ordinal='6' />
+                  <column datatype='integer' name='in_spotify_charts' ordinal='7' />
+                  <column datatype='integer' name='streams' ordinal='8' />
+                  <column datatype='integer' name='in_apple_playlists' ordinal='9' />
+                  <column datatype='integer' name='in_apple_charts' ordinal='10' />
+                  <column datatype='integer' name='in_deezer_playlists' ordinal='11' />
+                  <column datatype='integer' name='in_deezer_charts' ordinal='12' />
+                  <column datatype='integer' name='in_shazam_charts' ordinal='13' />
+                  <column datatype='integer' name='bpm' ordinal='14' />
+                  <column datatype='string' name='key' ordinal='15' />
+                  <column datatype='string' name='mode' ordinal='16' />
+                  <column datatype='integer' name='danceability_%' ordinal='17' />
+                  <column datatype='integer' name='valence_%' ordinal='18' />
+                  <column datatype='integer' name='energy_%' ordinal='19' />
+                  <column datatype='integer' name='acousticness_%' ordinal='20' />
+                  <column datatype='integer' name='instrumentalness_%' ordinal='21' />
+                  <column datatype='integer' name='liveness_%' ordinal='22' />
+                  <column datatype='integer' name='speechiness_%' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_5BB1E5D46F3642B68DE7536CE0298770]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Artist(S) Name' />
+        <param name='target' value='Sheet 3' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#00ff00' fontsize='18'>DanceAbility and Liveness measure of BTS, ED Sheeran, Taylor Swift</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Popular_Spotify_Songs' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xkkkm81d2c4lk145gxwd1h9vr9h'>
+            <column caption='Artist(S) Name' datatype='string' name='[artist(s)_name]' role='dimension' type='nominal' />
+            <column caption='Danceability %' datatype='integer' name='[danceability_%]' role='measure' type='quantitative' />
+            <column caption='Liveness %' datatype='integer' name='[liveness_%]' role='measure' type='quantitative' />
+            <column-instance column='[artist(s)_name]' derivation='None' name='[none:artist(s)_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[danceability_%]' derivation='Sum' name='[sum:danceability_%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[liveness_%]' derivation='Sum' name='[sum:liveness_%:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;BTS&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Ed Sheeran&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Taylor Swift&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00ff00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:danceability_%:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:liveness_%:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:danceability_%:qk] + [federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:liveness_%:qk])</rows>
+        <cols>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</cols>
+      </table>
+      <simple-id uuid='{ED38070B-13E1-4435-9C3E-77C43479E584}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#00ff00'>Who has so many streams in spotify? comparing names Billie ellish, BTS, Kendrick lamar,Eminem</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Popular_Spotify_Songs' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xkkkm81d2c4lk145gxwd1h9vr9h'>
+            <column caption='Artist(S) Name' datatype='string' name='[artist(s)_name]' role='dimension' type='nominal' />
+            <column-instance column='[artist(s)_name]' derivation='None' name='[none:artist(s)_name:nk]' pivot='key' type='nominal' />
+            <column caption='Streams' datatype='integer' name='[streams]' role='measure' type='quantitative' />
+            <column-instance column='[streams]' derivation='Sum' name='[sum:streams:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Billie Eilish&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;BTS&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Eminem&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Kendrick Lamar&quot;' />
+              <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Taylor Swift&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00ff00' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00ff00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:streams:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:streams:qk]</rows>
+        <cols>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</cols>
+      </table>
+      <simple-id uuid='{BBC9A50C-7409-4D13-94A6-3A256CF13F17}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Billie Ellish Stats in Spotify</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Popular_Spotify_Songs' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xkkkm81d2c4lk145gxwd1h9vr9h'>
+            <column caption='Artist(S) Name' datatype='string' name='[artist(s)_name]' role='dimension' type='nominal' />
+            <column-instance column='[artist(s)_name]' derivation='None' name='[none:artist(s)_name:nk]' pivot='key' type='nominal' />
+            <column caption='Streams' datatype='integer' name='[streams]' role='measure' type='quantitative' />
+            <column-instance column='[streams]' derivation='Sum' name='[sum:streams:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]'>
+            <groupfilter function='member' level='[none:artist(s)_name:nk]' member='&quot;Billie Eilish&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00ff00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='11' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:streams:qk]</rows>
+        <cols>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</cols>
+      </table>
+      <simple-id uuid='{7BEEF246-F8A6-4FAD-AF89-514F84FB6ADC}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Artist count in year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Popular_Spotify_Songs' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xkkkm81d2c4lk145gxwd1h9vr9h'>
+            <column caption='Artist Count' datatype='integer' name='[artist_count]' role='measure' type='quantitative' />
+            <column-instance column='[released_year]' derivation='None' name='[none:released_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Released Year' datatype='integer' name='[released_year]' role='dimension' type='quantitative' />
+            <column-instance column='[artist_count]' derivation='Sum' name='[sum:artist_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00ff00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[sum:artist_count:qk]</rows>
+        <cols>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:released_year:qk]</cols>
+      </table>
+      <simple-id uuid='{EA48E1F5-3C38-4748-8DFA-9EE9C8FE8638}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00ff00' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#19222d' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='668' maxwidth='1666' minheight='668' minwidth='1666' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Popular_Spotify_Songs' name='federated.1xkkkm81d2c4lk145gxwd1h9vr9h' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1xkkkm81d2c4lk145gxwd1h9vr9h'>
+        <column caption='Artist(S) Name' datatype='string' name='[artist(s)_name]' role='dimension' type='nominal' />
+        <column-instance column='[artist(s)_name]' derivation='None' name='[none:artist(s)_name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='18' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='15' param='horz' type-v2='layout-flow' w='90396' x='0' y='0'>
+              <zone h='100000' id='7' param='horz' type-v2='layout-flow' w='90396' x='0' y='0'>
+                <zone fixed-size='408' h='100000' id='10' is-fixed='true' name='Sheet 1' w='24970' x='0' y='0'>
+                  <layout-cache minheight='399' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='204' h='100000' id='11' is-fixed='true' is-scaled='1' param='C:/Users/Sarveshvaran/Pictures/spotify.png' type-v2='bitmap' w='12725' x='24970' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='100000' id='12' is-fixed='true' type-v2='text' w='16867' x='37695' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontname='Wide Latin' fontsize='18'>SPOTIFY STATS</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='100000' id='16' name='Sheet 2' w='35832' x='54562' y='0'>
+                  <layout-cache cell-count-w='5' non-cell-size-w='79' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='100000' id='17' is-fixed='true' param='vert' type-v2='layout-flow' w='9604' x='90396' y='0'>
+              <zone h='32935' id='19' mode='typeinlist' name='Sheet 2' param='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]' type-v2='filter' w='9604' x='90396' y='0'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97604' id='22' param='vert' type-v2='layout-flow' w='99040' x='480' y='1198'>
+                <zone fixed-size='280' h='100000' id='10' is-fixed='true' name='Sheet 1' w='24970' x='0' y='0'>
+                  <layout-cache minheight='399' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='100000' id='11' is-fixed='true' is-scaled='1' param='C:/Users/Sarveshvaran/Pictures/spotify.png' type-v2='bitmap' w='12725' x='24970' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='100000' id='12' type-v2='text' w='16867' x='37695' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontname='Wide Latin' fontsize='18'>SPOTIFY STATS</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='32935' id='19' mode='checkdropdown' name='Sheet 2' param='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]' type-v2='filter' w='9604' x='90396' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='100000' id='16' is-fixed='true' name='Sheet 2' w='35832' x='54562' y='0'>
+                  <layout-cache cell-count-w='5' non-cell-size-w='79' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C9DA267E-A586-4463-A9CC-85D7874DE7CA}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='7' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{C5BC75EB-5F5F-4327-807D-DDA3787DC8D9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</field>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:released_day:qk]</field>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:track_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0B8B3FB0-EE61-4A78-B79E-B4B7EFF53383}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</field>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:released_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{656177AA-4E5F-47A6-BB50-E4E2C55916F5}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:artist(s)_name:nk]</field>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:track_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{14CFA0BA-E731-4E51-949B-6C541A6EA4F4}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{08B93E1F-9305-4299-B9C8-2C553C72C42D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{187AB6CE-4154-4F68-A43B-27F3D552AE33}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xkkkm81d2c4lk145gxwd1h9vr9h].[none:released_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4A7639CB-9D7F-461C-B09F-710F2A10D74F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      Ajkc/Z3/DzDgMwCT8yYrAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      4+0MDI3nBE6IgQAWoeV0R6G0GYUxqY1iRoMcWr7XgUaCDBJOCvkMbSXnZJFQ8myx+GNB/QIW
+      1C/o3L46fTXnNZ3XJz/JlGdW+kqaqa0PcOags8g0revcrq0J9A5KnDQPLYIurc2EUA6a7RmA
+      evSRyBQq+DEFUwmUHa0l/N1OMWuaMd1QWwE8ilJzDEcZCVZSzG7wCZQpYCnwC2TKjEFZx/6E
+      pjpbUNLWU8I5JwM/CPufBF5BM0zGdENtTaAGlEajNJnrEcAXUJaEDuBfkKP7RTQCNAEXAf+B
+      BHMGxUa+FxLBv6Jp0a8hR9uYbqitAE4Nn3I0op79lDJlY9Hcf1fSSEBH9ErtTAJwKIRJNBaA
+      STQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0
+      FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaA
+      STQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0FoBJNBaASTQWgEk0
+      FoBJNBaASTT1ta4AeWAzkAEGU5RkBlhdclwDMAyoA7JAW/huBhqBVLjWRmB9OK5wvDHdUFsB
+      5IBFwN3A+8ClqNECPA1cCEwO27sC5wNDgF8CvwY2ATsDFwBDgbXA94GlwCDgaOAYJB5jylBb
+      ASwGngEmAq1dylYD/wSc2GX/a8DzwMXAGOBG4FHgBOARYEfgG8DKULYnEo8xZaitD7ATcBpw
+      COqxS1kSvl8F3kJmUmF7GjAemT5nAwtD2a+As8L+Cajh/7lvqm4+HNR2BBgYvlNlyoYAD4dP
+      A3Ag6uWzQBNF234o0BH+7gjbhPJByMwCZuRmcGD2wM7LT8hPYF77vN75HWa7aM0PJVvjOszJ
+      nE2qPQPAfObHwAnujs+HTx54Hdn2+4XtfJdjs12+C5Qcu571LEst6yxqT7WzPLW8d+tstkmK
+      bNm+rpqsSK2E1ObO7fgKIIt68RRydBuR0zsQWFVSvopirz8kbI9Go8GGYllLuoWWdEvn5Y/k
+      SBY2LMRUj1mpw2lmSE3r8GD9g2Qa1nVux/c5wC3AOxRnijpQA98NeAl4AzXwG4HjwjnHAj8O
+      +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
+      EZw5YXchdn8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='169'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      a31LCdfjhvkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAErklEQVR4nO3cXWjVdRzH8c9pm86HqQlmdgpseWEPjOjJrCAvsgsDi0AkSfCmi9AszSyR
+      2awMEZI0ySsDzQJlIUotZYIrS/Epe2JdSDZWbT0I5gZOdLkuEnFIWWnO+X6/7v6HH///9wfn
+      Df/D/5xT6Orq6ooEdUVPDyD1JAMQmgEIzQCEVnrmwe762qzbuj8Dy0ty9ahb8+TURzNz5rNZ
+      vvy1/3yBloNf56217+RAayGrV7563gNLF1K3ADZsqs+cxSsyYkBZkmRn/abs2rUzNTU1mTxt
+      RtoP7sjGbftSVl6RuXNnZ+/mNekcdks+qtuW0ZXlqRo/LTcXK7Js6dLMmD07JUkGDi1mXvWc
+      TH9iSU/sT/pb3W6Bnnpmeha/8HTmLViU5p9/y9jxEzNmzNjU1NTkxuv6ZtW6hrzy8sJMGTcq
+      K9Z+mEOtTdm8/cssWPhcHrjvzqxZ/W5OtP2Q5sO/p+TUOQcNuTIlhYu/Memf6BbANTdUZdkb
+      b+b56VNTPb+6+8pjh1NaMTyFJCMrK9Pa8lOSZMLEh1NSSIaNujvHvv88dRtq89CkKRdrfum8
+      dAug9u2Vqd1Yl48/2Z6riiOTJP1PtuWDLVvTcnRwBnd+mw3vb8lLS1Zm0iMPnnWyxybckUXr
+      9+f+quLp15oONKah4dO0tDanoWFHTvy/+5H+lcKZT4JPdh7PF/s/y8k+g3Jb1U0pFJLjR49k
+      976vUnX7XanoW8jePXsy4vrRuXb40Pza0pSyIcUM6f/nZ4Yjzfvy+nvf5MVZj5++QNOBxjT9
+      +Mupoz65d9w9KbuoW5T+WuFCfRXi0HeNWbpqfWbNm59hA3yLq3e4YAFIvZEPwoRmAEIzAKGV
+      nnuJLiVtbW1pb2/v6THOUiwWz73oEmQAvUxnZ2c6Ojp6eozLhrdAQjMAoRmA0AxAaAYgNAMQ
+      mgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjN3wP0MqWlpenXr19Pj3HZ8F8hhOYtkNAMQGgG
+      IDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjN
+      AIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwCh
+      GYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYg
+      NAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0A
+      hGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZ
+      gNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0
+      AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCE
+      ZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA
+      0AxAaAYgNAMQmgEI7Q9NYceM2e72DQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
